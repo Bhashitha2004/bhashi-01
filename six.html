@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>full form</title>
+    </head>
+    <body>
+        <h2>onile boking system</h2>
+        <form method="post" action='save.php'>
+<p>name
+    <input type="text"name='cname'size='25'maxlenght='40'required>
+</p>
+<p>phone <input type="text"name='phone_number'placeholder='mobile'></p>
+<p>email <input type="email"name='email_address'></p>
+<fieldset>
+<legend>which taxi do you required?</legend>
+<p><input type="redio"name='taxi'value='car'></p>
+<p><input type="radio"name='taxi'value='van'>van</p>
+<p><input type="radio"name='taxi'value='bike'>bike</p>
+</fieldset>
+<fieldset>
+    <legend>extras</legend>
+    <p><input type="checkbox"name='extras 1'value='tip'>stock tip</p>
+   <p><input type="checkbox"name='extras 2'value='wheele chir'>wheelchir Access</p>
+</fieldset>
+<p>pickup Date
+/Time 
+<input type="date"name="pickup_time">
+</p>
+   <p>pickup place
+    <select name="pickup_place">
+        <option value=" "selected>select one</option>
+        <option value="office">Taxi office</option>
+        <option value="town_hall">Town_Hall</option>
+        <option value="telepathy">We'11 Guess!</option>
+    </select>
+   </p>
+<p> Drop off place
+<input type="text" name="Drop_place"list="destinations">
+<datalist id="destinations">
+    <option value="airport">
+        <option value="beach">
+            <option value="Fred Flinstones House">
+            </option>
+        </option>
+    </option>
+</datalist>
+</p>
+<p>Special Instructions
+<textarea name="comments" id="" cols="30" rows="10"maxlength="500"></textarea>
+</p>
+<p><input type="reset"value="clear form"></p>
+<p><input type="submit"value=submitbocking></p>
+        </form> 
+    </body>
+</html>
